@@ -1,0 +1,21 @@
+<!-- TODO: Add follow intents where available TODO: Revisit color and hover color -->
+{{ $icon_size := "32px" }}
+{{ $fill := "#fff" }}
+{{ with .Param "mastodon" }}
+<a href="{{ . }}" target="_blank" class="link-transition mastodon link dib z-999 pt3 pt0-l mr1" title="Mastodon link" rel="noopener noreferer" aria-label="find me on Mastodon——Opens in a new window">
+  {{ partial "svg/mastodon.svg" (dict "size" $icon_size) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "github" }}
+<a href="{{ . }}" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener noreferer" aria-label="follow on Github——Opens in a new window">
+  {{ partial "svg/github.svg" (dict "size" $icon_size "fill" $fill) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "gitlab" }}
+<a href="{{ . }}" target="_blank" class="link-transition gitlab link dib z-999 pt3 pt0-l mr1" title="Gitlab link" rel="noopener noreferer" aria-label="follow on Gitlab——Opens in a new window">
+  {{ partial "svg/gitlab.svg" (dict "size" $icon_size "fill" $fill) }}
+  {{- partial "new-window-icon.html" . -}}
+</a>
+{{ end }}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Augustin Godiscal</title>
+    <link>/articles/</link>
+    <description>Recent content in Articles on Augustin Godiscal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zero Waste Map</title>
+      <link>/articles/zero-waste-map/</link>
+      <pubDate>Thu, 31 Jan 2019 10:18:00 +0000</pubDate>
+      
+      <guid>/articles/zero-waste-map/</guid>
+      <description>https://zerowastemap.app (opening soon)
+Manifesto (draft) Zero Waste Map is for all independantly or co-owned structures that apply to the zero waste movement.
+Substantial quantity of goods available in bulk (stored in jars, tanks and others containers) is a required condition for grocery stores, markets, coops to appear on the map.
+Absense of disposable plastic bags and being 100% zerowaste friendly is required too.
+Some stores will still appear on the map even though they still sell a lot of goods wraped in plastic (often meats and some dried goods) as long as long as other conditions are met.</description>
+    </item>
+    
+    <item>
+      <title>Setting up this blog with now.sh</title>
+      <link>/articles/setting-up-static-website-hugo-now-sh/</link>
+      <pubDate>Sun, 20 Jan 2019 10:18:00 +0000</pubDate>
+      
+      <guid>/articles/setting-up-static-website-hugo-now-sh/</guid>
+      <description>Advantages of now cli  Now cli is dead powerful Inexpensive  Requirements  Install hugo (macos)  brew install hugo  Install now cli  npm install now -g now login now domains add auggod.tech Steps  Setting up new site  hugo new site blog  Adding a theme  cd blog/themes git clone git@github.com:budparr/gohugo-theme-ananke.git  Configure site to use theme  cp gohugo-theme-ananke/config.toml ../../config.toml Now, you probably wants to change defaults values for config file.</description>
+    </item>
+    
+  </channel>
+</rss>

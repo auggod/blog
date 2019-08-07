@@ -1,0 +1,12 @@
+{
+  "title": "Blog",
+  "links": {
+    "payment": [
+      {
+        "href": "https://liberapay.com/auggod",
+        "type": "text/html"
+      }
+    ]
+  },
+  "description": "My personal blog"
+}
