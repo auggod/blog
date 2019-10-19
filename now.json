@@ -1,0 +1,16 @@
+{
+  "public": true,  
+  "version": 2,
+  "name": "blog",
+  "builds": [
+    {
+      "src": "www/**", "use": "@now/static" },
+    { "src": ".well-known/**", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "headers": { "Service-Worker-Allowed": "/" }, "dest": "/www/$1" },
+    { "src": "/.well-known/(.*)", "dest": ".well-known/$1" }
+  ],
+  "alias": "blog.auggod.tech",
+  "regions": ["all"]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  <head>
+    <title>{{ $.Site.Title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Augustin Godiscal personal blog" />
+    <link rel="preload" as="style" href="/dist/css/{{ index .Site.Data.css.hash "main.css" }}" onload="this.rel='stylesheet'">
+    <noscript><link href="/dist/css/{{ index .Site.Data.css.hash "main.css" }}" rel="stylesheet"></noscript>
+  </head>
+
+  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+
+    {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    <main class="pb7" role="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+    <script type="text/javascript" src="/dist/js/{{ index .Site.Data.js.hash "main.js" }}"></script>
+  </body>
+</html>
